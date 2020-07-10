@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mapas | Establecimientos</title>
+	<script src="https://kit.fontawesome.com/440a4e37d4.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="src/css/app.css">
+</head>
+<body>
+	<header class="copyright_header">
+		<div class="bar">
+			<div class="column">
+				<span class="copyright_text">Diseño y desarrollo por <a href="https://lukasalvarez.com" target="_blank">Lukas Álvarez</a></span>
+			</div>
+	
+			<div class="column">
+				<nav class="social-media_menu">
+					<ul>
+						<li>
+							<a href="https://github.com/lukasalvarezdev/" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/lukasalvarezdev/" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/lukasalvarezdev" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=+573218110248" target="_blank">
+								<i class="fab fa-whatsapp"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<h1>Busca establecimientos de gasolina en todo México</h1>
+		<form id="search-form" class=" my-2 my-lg-0">
+			<label for="search">Busca por establecimiento o ciudad</label>
+			<input name="search" class="form-control" type="text" placeholder="Ej. Guadalajara">
+		</form>
+	
+		<div class="map-container" id="map">
+			<!--map here-->
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="src/js/app.js" type="module"></script>
+</body>
+</html>
